@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/sayi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="Sayı Girin"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/topla"
+        app:layout_constraintEnd_toStartOf="@+id/topla"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hesapla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Hesapla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sonuc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/topla"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="10dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/carp"
+        app:layout_constraintEnd_toStartOf="@+id/cikar"
+        app:layout_constraintStart_toEndOf="@+id/sayi1"
+        app:layout_constraintTop_toTopOf="@+id/cikar" />
+
+    <EditText
+        android:id="@+id/sonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Sonuç"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hesapla"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/carp"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="59dp"
+        android:text="x"
+        app:layout_constraintBottom_toBottomOf="@+id/sonuc"
+        app:layout_constraintEnd_toStartOf="@+id/bol"
+        app:layout_constraintStart_toEndOf="@+id/sayi2"
+        app:layout_constraintTop_toTopOf="@+id/cikar" />
+
+    <EditText
+        android:id="@+id/sayi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="11dp"
+        android:ems="10"
+        android:hint="Sayı Girin"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/carp"
+        app:layout_constraintEnd_toStartOf="@+id/carp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cikar"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="71dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/sonuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/topla" />
+
+    <Button
+        android:id="@+id/bol"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/sonuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carp"
+        app:layout_constraintTop_toTopOf="@+id/cikar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:text="Hesap Makinesi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/temp_l"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:background="@drawable/custom_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
