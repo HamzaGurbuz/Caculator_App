@@ -51,10 +51,3 @@ If you want to customize the app, edit the following files:
 
 Contributions are welcome! Feel free to submit a pull request or open an issue.
 
-## License
-
-This project is licensed under the MIT License.
-
----
-
-Let me know if you want me to tweak anything or add more details! 🚀
