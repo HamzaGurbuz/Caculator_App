@@ -13,7 +13,7 @@ This project contains a simple calculator application built with Android Studio.
 1. **Clone the Repository:**
 
 ```bash
-git clone https://github.com/HamzaGurbuz/Caculator_App
+git clone https://github.com/HamzaGurbuz/Calculator_App
 ```
 
 2. **Open Android Studio:**
