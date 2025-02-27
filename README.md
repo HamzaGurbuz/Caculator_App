@@ -37,7 +37,7 @@ git clone https://github.com/HamzaGurbuz/Calculator_App
 1. Launch the application.
 2. Enter numbers using the on-screen keypad.
 3. Tap the desired operation (+, -, *, /).
-4. Press the **=** button to see the result.
+4. Press the **Hesapla** button to see the result.
 5. Use the **C** button to clear the input and start a new calculation.
 
 ## Configuration
